@@ -26,37 +26,57 @@ An <h3> heading
 An <article> element for each major point in your work history
 A <footer> element with the text "Built by [your name]"
 Your website will look pretty bad right now, but that's okay! CSS is up next.-->
+
+<!-- In your HTML, add a new div around your name and job title. This new div should be 30vw wide with 4rem of padding and should be centered both vertically and horizontally inside the header element. (Hint: flexbox is great for centering!)
+Use flexbox to create a two-column layout for the page content:
+The left-hand column should be your bio aside element.
+The right-hand column should contain your tech stack section and your work experience section. These sections should be stacked on top of each other.
+Each column should have a padding of 1rem.
+You will need to add new elements to your HTML to make flexbox work correctly.
+Each article element in your work experience section should have a top margin of 2em.
+Your footer element should have a top padding of 15vh and a height of 20vh. -->
+
 <body>
 <header>
-<section class = "splash">
-    <h1 class= "name" >Sydney Wait</h1>
-    <h2 class = "job-title">Awesome Developer</h2>
-</section>
-
+    <div class = "splash">
+        <h1 class= "name" >Sydney Wait</h1>
+        <h2 class = sub-title>Awesome Developer</h2>
+    </div>
+    
 </header>
-    <aside>
-        <h3 class= "bio">Bio:</h3>
+
+
+    <div class="flex-container">
+        <div>
+        <h3 class= "bio">About Me:</h3>
         <p> Lorem ipsum etiam sodales posuere tincidunt interdum curabitur sed etiam vehicula ultricies pharetra, auctor dapibus convallis fringilla gravida class mollis auctor suspendisse quisque fermentum, phasellus odio arcu vel id convallis vehicula tellus habitant dapibus cursus.
 
         Donec placerat facilisis dictum dapibus enim neque amet scelerisque, lorem augue maecenas conubia auctor tristique eros nam convallis maecenas morbi eleifend est rutrum lectus tristique, eu adipiscing libero litora himenaeos sed faucibus sodales.</p>
 
-    <img src="https://www.biography.com/.image/t_share/MTIwNjA4NjM0MTU1NDAyNzY0/amy-adams-20883223-1-402.jpg" width = 200px, alt="Not me">
+    <img src="https://www.biography.com/.image/t_share/MTIwNjA4NjM0MTU1NDAyNzY0/amy-adams-20883223-1-402.jpg" width = 200px alt="Not me">
+        </div>
+    
+    
+        <div>
+        <h3 class = "languages">Programming Languages</h3>
+        <ul>
+            <li>Javascript</li>
+            <li>C++</li>
+            <li>Java</li>
+    
+        </ul>
+    
 
-    <h3 class = "languages">Programming Languages</h3>
-    <ul>
-        <li>Javascript</li>
-        <li>C++</li>
-        <li>Java</li>
-
-    </ul>
-    <section>
         <h3 class = "work">Work Experience:</h3>
-        <article>This is what I've done</article>
-        <article>This is another thing I've done</article>
-        <article>This is a third thing I've done</article>
+            <h4 class = "job-title">Job 1</h4>
+            <article class="job-desc">Lorem ipsum etiam sodales posuere tincidunt interdum curabitur sed etiam vehicula ultricies pharetra, auctor dapibus convallis fringilla gravida class mollis auctor suspendisse quisque fermentum, phasellus odio arcu vel id convallis vehicula tellus habitant dapibus cursus.</article>
+            <h4 class = "job-title">Job 2</h4>
+            <article class="job-desc">Lorem ipsum etiam sodales posuere tincidunt interdum curabitur sed etiam vehicula ultricies pharetra, auctor dapibus convallis fringilla gravida class mollis auctor suspendisse quisque fermentum, phasellus odio arcu vel id convallis vehicula tellus habitant dapibus cursus.</article>
+            <h4 class = "job-title">Job 3</h4>
+            <article class="job-desc">Lorem ipsum etiam sodales posuere tincidunt interdum curabitur sed etiam vehicula ultricies pharetra, auctor dapibus convallis fringilla gravida class mollis auctor suspendisse quisque fermentum, phasellus odio arcu vel id convallis vehicula tellus habitant dapibus cursus.</article>
+        </div>
 
-    </section>
-</aside>
+</div>
 
 
     
