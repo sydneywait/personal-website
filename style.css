@@ -25,10 +25,12 @@ header {
     display: flex;
 }
 .bio {
-    padding 30em;
+    padding: 2em;
     
 }
-
+.experience {
+    padding: 2em;
+}
 body {
     background-color: #494949;
     color: #f4c20c;
@@ -37,33 +39,33 @@ body {
 
 .splash {
     display: inline-block;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
     width: 30vw;
-    padding: 4rem 4rem 4rem 4rem;
+    padding: 2rem 4rem 2rem 4rem;
     margin: auto;
-    background-color: grey; opacity: 0.3;
+    background-color: rgba(73, 73, 73, 0.6); 
     border: 6px dotted black;
+
+    /* need to figure out how to change background transparency without making text transparent */
+    /* Solution!!  Use RGBA and not call out opacity separately */
           
 }
-/* .splash-back {
-    background-color: grey; opacity: 0.9;
-    border: 6px dotted black;
-    height: 100%;
-} */
 .name, .sub-title {
-     vertical-align: middle;
-     color: black;
+    vertical-align: middle;
+    font-size: 2em;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Encode Sans Condensed', sans-serif;
+    color: black;
+    opacity: 1;
 }
+
 .head-shot {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
-    margin-top: 2em;
- 
-    
+    margin-top: 2em; 
 }
+
 .job-desc {
     display: block;
     margin-top: 2em;
@@ -73,10 +75,8 @@ body {
 .flex-container {
     display: flex;
     flex-direction: row;
-    
-    
-    
-      }
+}
+
 .flex-container > div {
         width: 50vw;
         margin: 10px;  
