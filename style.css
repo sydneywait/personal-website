@@ -21,16 +21,25 @@ header {
     width: 100vw;
     height: 100 vh;
 
+
 }
+.bio {
+    font-size: 1.2em;
+}
+
 body {
     background-color: #494949;
     color: #f4c20c;
     font-family: 'Oswald', sans-serif;
 }
 
-.name {
+.splash {
     font-size: 2em;
     font-family: 'Roboto', sans-serif;
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    background: white url(https://www.publicdomainpictures.net/pictures/200000/nahled/forest-background.jpg);
 }
 
 h1, h2, h3 {
